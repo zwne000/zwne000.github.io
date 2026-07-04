@@ -1,0 +1,51 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,
+body{
+    width:100%;
+    height:100%;
+}
+
+body{
+    background:#eceae6;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    overflow:hidden;
+}
+
+.hero{
+    display:block;
+
+    width:100vw;
+    height:100vh;
+
+    object-fit:contain;
+    object-position:center center;
+
+    user-select:none;
+    -webkit-user-select:none;
+    -webkit-user-drag:none;
+
+    pointer-events:none;
+}
+
+@media (max-aspect-ratio:1366/768){
+    .hero{
+        width:100vw;
+        height:auto;
+    }
+}
+
+@media (min-aspect-ratio:1366/768){
+    .hero{
+        width:auto;
+        height:100vh;
+    }
+}
